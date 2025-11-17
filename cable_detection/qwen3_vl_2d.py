@@ -11,7 +11,12 @@ from PIL import ImageColor
 from openai import OpenAI
 
 QWEN_MODEL_NAME = 'qwen3-vl-plus-2025-09-23'
-DASHSCOPE_API_KEY = "sk-f84ae7a4523d4010853587f05b5739c8"
+
+from dotenv import load_dotenv
+load_dotenv() # 这会加载 .env 文件中的变量到 os.environ
+DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY")
+
+SAVE_DIR = "detected_images"
 
 
 additional_colors = [colorname for (colorname, colorcode) in ImageColor.colormap.items()]
@@ -178,6 +183,16 @@ def plot_bounding_boxes(img_path, bounding_boxes):
 
     # 显示最终图像
     # img.show()
+    if not os.path.exists(SAVE_DIR):
+        os.makedirs(SAVE_DIR)
+    name, ext = os.path.splitext(os.path.basename(img_path) if isinstance(img_path, str) else "image.png")
+    save_filename = f"{name}_annotated{ext}"
+    save_path = os.path.join(SAVE_DIR, save_filename)
+    try:
+        img.save(save_path)
+        print(f"Image successfully saved to: {save_path}")
+    except Exception as e:
+        print(f"Error saving image to {save_path}: {e}")
     return img
 
 

@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2025-12-16 16:26:56",
+    "image_path": "qwen_pictures/20251216_162656.png",
+    "question": "这是一个操作目标线缆(一端是两个USB头)放到卡槽卡紧的工业场景，请帮我标注出目标线缆的位置，大概在图像的什么地方。",
+    "system_prompt_preview": "",
+    "response": "DashScope API 调用失败。Code: AllocationQuota.FreeTierOnly，Message: The free tier of the model has been exhausted. If you wish to continue access the model on a paid basis, please disable the \"use free tier only\" mode in the management console.",
+    "token_info": "Status: Failed (Code AllocationQuota.FreeTierOnly)"
+  },
+  {
+    "timestamp": "2025-12-16 14:40:51",
+    "image_path": "qwen_pictures/20251216_144051.png",
+    "question": "这是一个操作目标线缆(一端是两个USB头)放到卡槽卡紧的工业场景，请帮我标注出目标线缆的位置，大概在图像的什么地方。",
+    "system_prompt_preview": "",
+    "response": "DashScope API 调用失败。Code: AllocationQuota.FreeTierOnly，Message: The free tier of the model has been exhausted. If you wish to continue access the model on a paid basis, please disable the \"use free tier only\" mode in the management console.",
+    "token_info": "Status: Failed (Code AllocationQuota.FreeTierOnly)"
+  },
+  {
+    "timestamp": "2025-12-16 14:28:23",
+    "image_path": "qwen_pictures/20251216_142822.png",
+    "question": "这是一个操作目标线缆(一端是两个USB头)放到卡槽卡紧的工业场景，请帮我标注出目标线缆的位置，大概在图像的什么地方。",
+    "system_prompt_preview": "",
+    "response": "DashScope API 调用失败。Code: AllocationQuota.FreeTierOnly，Message: The free tier of the model has been exhausted. If you wish to continue access the model on a paid basis, please disable the \"use free tier only\" mode in the management console.",
+    "token_info": "Status: Failed (Code AllocationQuota.FreeTierOnly)"
+  }
+]
